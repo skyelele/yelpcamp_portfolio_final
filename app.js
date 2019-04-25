@@ -32,7 +32,7 @@ app.use(cookieParser("secret"));
 // PASSPORT CONFIGURATION
 app.use(
   require("express-session")({
-    secret: "Once again Rusty wins cutest dog!",
+    secret: "Once again Rusty wins cutest dog!!!",
     resave: false,
     saveUninitialized: false
   })
