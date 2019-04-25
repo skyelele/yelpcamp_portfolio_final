@@ -19,7 +19,8 @@ var commentRoutes = require("./routes/comments"),
   indexRoutes = require("./routes/index");
 
 mongoose.connect(
-  "mongodb://skye:skye@devconnectorskye-rttue.mongodb.net/test?retryWrites=true"
+  "mongodb://skye:skye@devconnectorskye-rttue.mongodb.net/test?retryWrites=true",
+  { useNewUrlParser: true }
 );
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
